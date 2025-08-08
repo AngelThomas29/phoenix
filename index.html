@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood-Based Beverage Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🥤Mood-Based Beverage Recommender</h1>
+    <select id="moodSelector">
+      <option value="">-- Select Your Mood --</option>
+      <option value="happy">Happy 😊</option>
+      <option value="sad">Sad 😢</option>
+      <option value="tired">Tired 😴</option>
+      <option value="excited">Excited 🤩</option>
+      <option value="relaxed">Relaxed 😌</option>
+      <option value="romantic">Romantic 😍</option>
+      <option value="stressed">Stressed 😖</option>
+      <option value="sleepy">Sleepy 😴</option>
+      <option value="bored">Bored 😐</option>
+      <option value="nervous">Nervous 😬</option>
+
+    </select>
+
+    <div id="drinkDisplay" class="drink-card hidden">
+      <h2 id="drinkName"></h2>
+      <img id="drinkImage" src="" alt="Drink Image" />
+      <div class="buttons">
+        <button onclick="showHistory()">About This Drink</button>
+        <button onclick="showRecipe()">Recipe</button>
+
+      </div>
+      <div id="drinkInfo" class="info-box hidden"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
